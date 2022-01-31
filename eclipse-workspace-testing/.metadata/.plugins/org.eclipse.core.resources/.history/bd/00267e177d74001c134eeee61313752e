@@ -1,0 +1,21 @@
+package com;
+
+
+public class Hello {
+	
+	public static void main(String[] args) {
+		
+		String baseurl = "http://www.facebook.com";
+		driver.get(baseurl);
+		
+		String tagname = driver.findElement(By.id("email")).getTagName();
+		System.out.println(tagname);
+		 
+		System.out.println(driver.findElement(By.className("_6lux")).getTagName());
+		System.out.println(driver.findElement(By.cssSelector("input#email")).getTagName());
+		
+		System.out.println(driver.findElement(By.xpath("//*[@id=\'email\']")));
+		
+	}
+
+}

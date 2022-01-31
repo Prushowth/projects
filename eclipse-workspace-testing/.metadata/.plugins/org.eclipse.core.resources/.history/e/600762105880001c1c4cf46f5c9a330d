@@ -1,0 +1,9 @@
+package com;
+
+public class Registration {
+	
+	public void employeeReg() {
+		
+	}
+
+}

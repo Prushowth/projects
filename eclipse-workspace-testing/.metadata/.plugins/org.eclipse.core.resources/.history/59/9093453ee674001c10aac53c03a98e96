@@ -1,0 +1,34 @@
+package com;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+public class AirtelPlan {
+	
+	public void recharge() {
+		
+		String BaseUrl = "https://www.airtel.in";
+		ChromeWebDriver1 cd1 = new ChromeWebDriver1();
+		WebDriver driver = cd1.driverChromeDriver();
+		
+		driver.get(BaseUrl);
+		System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/button")).getTagName());
+		driver.findElement(By.xpath("/html/body/div[1]/div/button")).click();
+		
+		System.out.println(( driver.findElement(By.xpath("/html/body/header/div/div[2]/div[1]/div[1]/div[1]/h3"))).getTagName());
+		
+		WebElement drop1 = driver.findElement(By.xpath("/html/body/header/div/div[2]/div[1]/div[1]/div[1]/h3"));
+		
+		Select s1 = new Select(drop1);
+		s1.selectByVisibleText("View Plans");
+		
+		
+			
+		
+	}
+	
+
+
+}

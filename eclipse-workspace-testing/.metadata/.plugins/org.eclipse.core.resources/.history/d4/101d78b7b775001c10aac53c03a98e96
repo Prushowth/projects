@@ -1,0 +1,14 @@
+package com;
+
+
+public class Hello {
+	
+	public static void main(String[] args) {
+		
+		AirtelPlan ap = new AirtelPlan();
+		ap.recharge();
+		
+		
+	}
+
+}

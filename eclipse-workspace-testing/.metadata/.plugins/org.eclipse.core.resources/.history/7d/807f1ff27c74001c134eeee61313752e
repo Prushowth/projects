@@ -1,0 +1,16 @@
+package com;
+
+import org.openqa.selenium.WebDriver;
+
+
+public class ChromeDriver {
+	
+	public void chromeDriver() {
+		System.setProperty("webdriver.chrome.driver", "D:/selenium dependency/chrome driver/chromedriver.exe");
+		WebDriver driver =
+
+		
+	}
+	
+
+}

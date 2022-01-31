@@ -1,0 +1,26 @@
+package com;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class SpeedTest {
+	
+	public void speedTest() {
+		
+		String BaseUrl = "https://www.speedtest.net";
+		ChromeWebDriver1 cd1 = new ChromeWebDriver1();
+		WebDriver driver = cd1.driverChromeDriver();
+		
+		driver.get(BaseUrl);
+		
+		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+		
+		System.out.println(driver.findElement(By.xpath("//*[@id=\'container\']/div/div[3]/div/div/div/div[2]/div[3]/div[1]/a/span[4]")).getTagName());
+		
+		
+		
+	}
+
+}

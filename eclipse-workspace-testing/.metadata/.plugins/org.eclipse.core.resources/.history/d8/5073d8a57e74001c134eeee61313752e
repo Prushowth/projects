@@ -1,0 +1,16 @@
+package com;
+
+import org.openqa.selenium.WebDriver;
+
+public class SpeedTest {
+	
+	public void speedTest() {
+		
+		String BaseUrl = "https://www.speedtest.net";
+		ChromeWebDriver1 cd1 = new ChromeWebDriver1();
+		WebDriver driver = cd1.driverChromeDriver();
+		
+		driver.get(BaseUrl);
+	}
+
+}

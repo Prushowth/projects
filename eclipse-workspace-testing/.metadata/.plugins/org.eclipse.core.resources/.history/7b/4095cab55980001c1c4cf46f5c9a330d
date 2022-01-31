@@ -1,0 +1,31 @@
+package com;
+
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+
+public class Registration {
+	
+	public void employeeReg() {
+		
+		String BaseUrl = "D:\\Simplilearn\\Phase 5-Testing\\eclipse-workspace-testing\\UserRegistration.html";
+		ChromeWebDriver1 cd1 = new ChromeWebDriver1();
+		WebDriver driver = cd1.driverChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
+		driver.get(BaseUrl);
+		
+		driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+		
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,200)");
+		
+		StringSelection str = new StringSelection("D:\\Simplilearn\\Phase 5-Testing\\registration.txt");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+	}
+
+}

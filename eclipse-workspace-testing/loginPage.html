@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        function submitdata() {
+            window.location.href="response1.html";
+        }
+
+
+    </script>
+
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        .container {
+            padding: 50px;
+            background-color: white;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            width: 50%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: orange;
+            outline: none;
+        }
+
+        div {
+            padding: 10px 0;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="container">
+            <center>
+                <h1> Employee Login Form</h1>
+            </center>
+            <hr>
+
+            <div class="container">
+
+                    <label> Emp ID </label>
+                    <input type="numbers" name="empid" placeholder="Employee ID" size="10" required /><br>
+
+                    <label> Phone : </label>
+                    <input type="numbers" name="phone" placeholder="phone no." size="10" required /><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Enter Email" name="email" required /><br>
+
+                    <button type="submit" name="submit" onclick="submitdata()"> Login </button>
+
+            </div>
+    </form>
+</body>
+
+</html>

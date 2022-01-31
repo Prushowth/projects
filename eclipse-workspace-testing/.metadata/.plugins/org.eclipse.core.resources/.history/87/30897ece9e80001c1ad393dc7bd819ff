@@ -1,0 +1,13 @@
+package com;
+
+import java.io.IOException;
+
+public class Application {
+
+	public static void main(String[] args) throws IOException {
+		
+		Registration rg = new Registration();
+		rg.employeeReg();
+	}
+
+}

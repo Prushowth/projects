@@ -1,0 +1,15 @@
+package com;
+
+
+public class Hello {
+	
+	public static void main(String[] args) {
+		
+		SpeedTest st = new SpeedTest();
+		st.speedTest();
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package com;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Hello {
+	
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "D:/selenium dependency/chrome driver/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		String baseurl = "http://www.facebook.com";
+		driver.get(baseurl);
+		
+		String tagname = driver.findElement(By.id("email")).getTagName();
+		System.out.println(tagname);
+		 
+		System.out.println(driver.findElement(By.className("_6lux")).getTagName());
+		System.out.println(driver.findElement(By.cssSelector("input#email")).getTagName());
+		
+		System.out.println(driver.findElement(By.xpath("//*[@id=\'email\']")));
+		
+	}
+
+}

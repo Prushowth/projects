@@ -1,0 +1,15 @@
+package com;
+
+import java.awt.AWTException;
+
+public class Hello {
+	
+	public static void main(String[] args) throws InterruptedException, AWTException {
+		
+		Grammarly grammarly = new Grammarly();
+		grammarly.plagiarismChecker();
+		
+		
+	}
+
+}

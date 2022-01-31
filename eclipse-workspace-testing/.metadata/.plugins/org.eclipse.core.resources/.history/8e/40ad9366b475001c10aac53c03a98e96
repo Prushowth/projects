@@ -1,0 +1,35 @@
+package com;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
+
+public class AirtelPlan {
+	
+	public void recharge() {
+		
+		String BaseUrl = "https://www.grammarly.com/plagiarism-checker";
+		ChromeWebDriver1 cd1 = new ChromeWebDriver1();
+		WebDriver driver = cd1.driverChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
+		driver.get(BaseUrl);
+		
+		System.out.println(driver.findElement(By.xpath("/html/body/div[1]/div/button")).getTagName());
+		driver.findElement(By.xpath("/html/body/div[1]/div/button")).click();
+		
+		
+		System.out.println(( driver.findElement(By.xpath("//*[@id=\'root\']/div/div/div/header/nav/div[2]/div[1]/ul/li[1]"))).getTagName());
+		
+		WebElement drop1 = driver.findElement(By.xpath("/html/body/header/div/div[2]/div[1]/div[1]/div[1]/h3"));
+		
+				
+	}
+	
+
+
+}

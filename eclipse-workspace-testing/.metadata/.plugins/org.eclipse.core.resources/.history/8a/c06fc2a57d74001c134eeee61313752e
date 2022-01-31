@@ -1,0 +1,10 @@
+package com;
+
+public class SpeedTest {
+	
+	public void speedTest() {
+		
+		String BaseUrl = "https://www.speedtest.net";
+	}
+
+}

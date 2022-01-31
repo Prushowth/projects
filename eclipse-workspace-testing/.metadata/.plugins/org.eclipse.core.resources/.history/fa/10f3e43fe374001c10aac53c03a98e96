@@ -1,0 +1,22 @@
+package com;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class AirtelPlan {
+	
+	public void recharge() {
+		
+		String BaseUrl = "https://www.airtel.in";
+		ChromeWebDriver1 cd1 = new ChromeWebDriver1();
+		WebDriver driver = cd1.driverChromeDriver();
+		
+		driver.get(BaseUrl);
+		
+		driver.findElement(By.xpath("/html/body/div[1]/div/button")).click();
+		
+	}
+	
+
+
+}

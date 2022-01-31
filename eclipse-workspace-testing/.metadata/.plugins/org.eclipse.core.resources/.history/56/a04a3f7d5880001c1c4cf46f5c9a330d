@@ -1,0 +1,20 @@
+package com;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+
+public class Registration {
+	
+	public void employeeReg() {
+		
+		String BaseUrl = "D:\\Simplilearn\\Phase 5-Testing\\eclipse-workspace-testing\\UserRegistration.html";
+		ChromeWebDriver1 cd1 = new ChromeWebDriver1();
+		WebDriver driver = cd1.driverChromeDriver();
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
+		driver.get(BaseUrl);
+	}
+
+}

@@ -1,0 +1,9 @@
+package com;
+
+public class ExcelWork {
+	
+	public void Exceldata() {
+		
+	}
+
+}
